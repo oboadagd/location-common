@@ -5,9 +5,11 @@ import (
 )
 
 type GetUsersByLocationAndRadiusRequest struct {
-	Latitude  float64 `json:"latitude" validate:`
-	Longitude float64 `json:"longitude" validate:`
-	Radius    float64 `json:"radius" validate:"required"`
+	Latitude   float64 `json:"latitude"`
+	Longitude  float64 `json:"longitude"`
+	Radius     float64 `json:"radius"`
+	Page       uint64  `json:"page"`
+	ItemsLimit uint64  `json:"itemsLimit"`
 }
 
 func (ur *GetUsersByLocationAndRadiusRequest) Validate() error {
