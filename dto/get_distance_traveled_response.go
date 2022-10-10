@@ -1,6 +1,6 @@
 package dto
 
 type GetDistanceTraveledResponse struct {
-	Username      string `json:"userName"`
-	TotalDistance string `json:"totalDistance"`
+	Username      string  `json:"userName"`
+	TotalDistance float64 `json:"totalDistance"`
 }
