@@ -1,7 +1,7 @@
 package enums
 
 const (
-	ErrorDBDuplicatedKeyMsg          = "error duplicate key"
+	ErrorDBDuplicatedKeyMsg          = "duplicate key"
 	ErrorRequestBodyCode             = "error request parameter"
 	ErrorUserNameNotEmptyMsg         = "error username could not be empty"
 	ErrorUserNameNotEmptyCode        = "error username not empty"
