@@ -1,4 +1,4 @@
-package dto
+package recordtype
 
 // Cfg is the struct type that contains fields that stores the necessary configuration
 // gathered from the environment.
