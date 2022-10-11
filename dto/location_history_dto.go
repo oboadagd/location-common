@@ -9,5 +9,5 @@ type LocationHistory struct {
 	Latitude  float64   `json:"latitude"  pg:", notnull"`
 	Longitude float64   `json:"longitude" pg:", notnull"`
 	UpdatedAt time.Time `json:"updatedAt" pg:"updated_at, notnull, alias:updatedAt"`
-	Distance  float64   `json:"distance"  pg:", notnull"`
+	Distance  float64   `json:"distance"`
 }
