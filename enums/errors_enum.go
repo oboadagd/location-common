@@ -15,5 +15,6 @@ const (
 	ErrorGetLastLocationHistoryByUserNameCode = "error getting location history by username"
 	ErrorGetLastLocationHistoryByUserNameMsg  = "error getting location history by username %s"
 	ErrorUpdateLocationCode                   = "error updating location"
-	ErrorGetByLatitudeLongitudeRange          = "error getting location by latitude longitude range"
+	ErrorGetByLatitudeLongitudeRangeMsg       = "error getting location by latitude longitude range"
+	ErrorRadiusNotNegativeMsg                 = "error radius could not be less than 0"
 )

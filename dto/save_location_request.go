@@ -14,7 +14,6 @@ type SaveLocationRequest struct {
 
 func IsMaxDecimals(fl validator.FieldLevel) bool {
 	valuef := fl.Field().Float() * math.Pow(10.0, float64(8))
-	println(valuef)
 	extra := valuef - float64(int(valuef))
 
 	return extra == 0
