@@ -5,7 +5,7 @@ import (
 )
 
 type GetLastByUserNameRequest struct {
-	UserName string `json:"username" validate:"required,min=4,max=16,patterazAZ09""`
+	UserName string `json:"username" validate:"required,min=4,max=16,patternazAZ09""`
 }
 
 func (ur *GetLastByUserNameRequest) Validate() error {
