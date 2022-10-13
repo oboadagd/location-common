@@ -1,7 +1,8 @@
 package dto
 
+// GetLastByUserNameResponse is a response of GetLastByUserName method
 type GetLastByUserNameResponse struct {
-	Username  string  `json:"userName"`
-	Latitude  float64 `json:"latitude"`
-	Longitude float64 `json:"longitude"`
+	Username  string  `json:"userName"`  // found username
+	Latitude  float64 `json:"latitude"`  // later latitude coordinate of found username
+	Longitude float64 `json:"longitude"` // later longitude coordinate of found username
 }
