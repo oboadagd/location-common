@@ -12,5 +12,5 @@ type LocationHistory struct {
 	Latitude  float64   `json:"latitude"  pg:", notnull"`                            // latitude coordinate of a geographic point
 	Longitude float64   `json:"longitude" pg:", notnull"`                            // longitude coordinate of a geographic point
 	UpdatedAt time.Time `json:"updatedAt" pg:"updated_at, notnull, alias:updatedAt"` // date of update
-	Distance  float64   `json:"distance"`                                            // traveled distance by username since last until current location
+	Distance  float64   `json:"distance"`                                            // traveled distance by username from last to current location
 }
