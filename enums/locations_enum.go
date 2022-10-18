@@ -1,7 +1,7 @@
 package enums
 
 const (
-	LocationCreated = "locations create successful" // message for creating locations successful
-	LocationUpdated = "locations update successful" // message for updating locations successful
-	LocationDeleted = "locations delete successful" // message for deleting locations successful
+	LocationCreated = "location create successful" // message for creating locations successful
+	LocationUpdated = "location update successful" // message for updating locations successful
+	LocationDeleted = "location delete successful" // message for deleting locations successful
 )
