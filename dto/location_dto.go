@@ -11,7 +11,7 @@ type Location struct {
 	tableName struct{}  `pg:"location,alias:location"`                                   // name of the table. Control field not visible
 	Id        int64     `json:"id" pg:",pk"`                                             // record identifier
 	UserName  string    `json:"userName" pg:"username, notnull, unique, alias:userName"` // username
-	Latitude  float64   `json:"latitude" pg:", notnull"`                                 // latitude coordinate of a geographic point
-	Longitude float64   `json:"longitude" pg:", notnull"`                                // longitude coordinate of a geographic point
+	Latitude  float64   `json:"latitude" pg:",use_zero, notnull"`                        // latitude coordinate of a geographic point
+	Longitude float64   `json:"longitude" pg:",use_zero, notnull"`                       // longitude coordinate of a geographic point
 	UpdatedAt time.Time `json:"updatedAt" pg:"updated_at, notnull, alias:updatedAt"`     // date of later update
 }
